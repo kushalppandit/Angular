@@ -1,0 +1,14 @@
+.sidebar {
+display: block;
+background-color: burlywood
+}
+
+.displayDiv {
+  margin-right: 10px;
+  margin-left: auto
+}
+
+.sidebar button {
+  width: 100px;
+  margin: 5px
+}

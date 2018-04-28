@@ -1,0 +1,36 @@
+<div style="margin-left:20%; margin-top:15%">
+<table>
+      <tr>
+        <td>
+           <select  [(ngModel)]="selectedVal">
+           <option *ngFor="let employee of employees"  > {{employee.name}} </option>
+        </select>
+        </td>
+      <td>
+        <h1>{{selectedVal}}</h1>
+      </td>
+      </tr>
+    <tr>
+      <td>
+        <span *ngFor="let employee of employees">
+         <input type="checkbox" value="{{employee.name}}" (click)='OnCheckSelected(employee)' >{{employee.name}}
+      </span>
+      </td>
+    <td>
+       <h1 *ngFor="let value of CheckSelectedValues">{{value}}</h1>
+    </td>
+    </tr>
+  <tr>
+    <td>
+      <span *ngFor="let employee of employees">
+        <input type="radio" name="employee" value="{{employee.name}}" [(ngModel)]="radioValue" > {{employee.name}}<br>
+      </span>
+    </td>
+      <td>
+        <h1>
+          {{radioValue}}
+        </h1>
+      </td>
+  </tr>
+</table>
+</div>

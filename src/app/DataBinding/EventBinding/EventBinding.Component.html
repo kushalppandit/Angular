@@ -1,0 +1,8 @@
+<div>
+  <h1 style="text-align: center">Event Binding</h1> 
+  <div style="width: 500px;border: 1px solid brown; margin: 0 auto; padding: 30px">
+    <input style="display: block;margin: 0 auto" #inputtext type="text" value="Name" #input />&nbsp;
+    <input style="display: block;margin: 0 auto" type="button" value="Change" (click)="ChangeText(input.value)" />&nbsp;
+    <h2 style="text-align: center; color: brown">{{inputName}}</h2>
+  </div>
+</div>

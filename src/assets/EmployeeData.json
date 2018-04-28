@@ -1,0 +1,6 @@
+[
+            {"id":1,"name":"Ashish","gender":"Male", "IsSelected":false},
+            {"id":2,"name":"Nitin","gender":"Male", "IsSelected":false},
+            {"id":3,"name":"Vishal","gender":"Male", "IsSelected":false},
+            {"id":4,"name":"Praksh","gender":"Male", "IsSelected":false}
+]

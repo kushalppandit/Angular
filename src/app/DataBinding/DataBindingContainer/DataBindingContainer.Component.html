@@ -1,0 +1,22 @@
+<div style="border-collapse: collapse; width:100%">
+
+  <div style="width:12%;float:left; background-color: blueviolet; margin-top:10%">
+        <div id="sidebar" class="sidebar" style=" width:150px" >
+        <ul style="list-style-type: none; padding-left: 20px; padding-top: 20px; padding-bottom: 20px; padding-right: 20px ">
+          <li  > <button class="button" style="width: 100%; height:50px " (click)="onBindingTypeSelctionButton(1)">Interpollation</button></li>
+          <li style="margin-top: 50px" > <button class="button" style="width:100% ; height:50px " (click)="onBindingTypeSelctionButton(2)">Property</button></li>
+          <li style="margin-top: 50px" > <button class="button" style="width:auto ; height:50px " (click)="onBindingTypeSelctionButton(3)">Event</button></li>
+          <li style="margin-top: 50px" > <button class="button" style="width:auto ; height:50px " (click)="onBindingTypeSelctionButton(4)">Event(TwoWay)</button></li>
+       </ul>
+     </div>
+ </div> 
+
+<div style="width:88%; float:right; height:auto;margin-top: 10%">
+  <div class="DataBindingMsg" [style.display]="HideDataBindingMsg ? 'none':'block' " style="margin-top: 10%"><h2 style="text-align: center;">Please Select The Type Of Data Binding</h2></div>
+  <div class="EventBinding" [style.display]="HideEventBindingTag ? 'none':'block'" style="margin-left: 200px;  "><EventBinding>Loading EnventBindingTag...</EventBinding></div>
+  <div class="EventBinding_TwoWay" [style.display]="HideEventBinding_TwoWayTag ? 'none':'block'" style="margin-left: 200px; " ><EventBindingTwoWay>Loading EventBindingTwoWayTag...</EventBindingTwoWay></div>
+  <div class="Interpollation" [style.display]="HideInterpollationTag ? 'none':'block'" style="margin-left: 200px; " ><Interpollaton>Loading InterpollationTag...</Interpollaton></div>
+  <div class="PropertyBinding" [style.display]="HidePropertyBindingTag ? 'none':'block'" style="margin-left: 200px;" ><Property>Loading PropertyBindingTag...</Property></div>
+</div>
+
+</div>

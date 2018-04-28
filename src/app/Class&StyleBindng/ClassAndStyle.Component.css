@@ -1,0 +1,14 @@
+.Default{
+    background: black;
+    color:white
+}
+.NewClass{
+    color:red;
+    background: pink
+}
+.Class1{
+    background: green;
+}
+.Class2{
+    color:yellow
+}

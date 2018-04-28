@@ -1,0 +1,12 @@
+<div style="margin-top:10%; margin-left:37%; border:2px solid red; width:500px">
+    <div  style="margin-left:23%" > 
+        <span *ngFor="let employee of employees">
+        <div *ngIf="empId==employee.id"><h2 > Selected Employee is<br/> <h2 style="color:brown" >Id: {{employee.id}} &nbsp; Name: {{employee.name}}</h2> </h2></div>
+    </span>
+     <br/>
+    <a (click)="GoPrevious()"> <button >Previous</button> </a> &nbsp; 
+    <a (click)="GoNext()"><button >Next</button></a> &nbsp;
+    <button (click)="GoToEmployeeList()" >Back</button> <br/>
+    <h2 style="color:red" > {{Message}} </h2>
+    </div>
+</div>

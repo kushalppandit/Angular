@@ -1,0 +1,24 @@
+<table>
+    <tr>
+        <td>
+            <div>
+                <h1>
+                    From Parent Component
+                </h1>
+                <label>
+                    Enter Parent Component Value
+                </label> 
+                <input type="text" #ptext (keyup)="0">
+                <p>
+                   Value From Child Component Is <b style="font:xx-large; color:brown"> {{ChildData}} </b>
+                </p>
+
+            </div>
+        </td>
+        <td>
+            <div style="width:500px">
+               <child (ChildEvent)="ChildData=$event" [ParentData]="ptext.value" >Loadin Child Component......</child>
+            </div>
+        </td>
+    </tr>
+</table>

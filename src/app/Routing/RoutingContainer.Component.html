@@ -1,0 +1,17 @@
+
+
+<div style="margin-top:10%; margin-left:40%">
+  <div style="float:left; width:20%">
+     <h1>Employee List</h1><br/>
+     <ul class="items" >
+       <li (click)="OnSelect(employee)" [class.selected]="IsSelectedEmp(employee)" *ngFor="let employee of employees">  
+           <span class="badge">  {{employee.id}} </span> {{employee.name}}
+        </li> 
+     </ul>
+</div>
+</div>
+<div style="float:right">
+  <router-outlet></router-outlet>
+</div>
+
+

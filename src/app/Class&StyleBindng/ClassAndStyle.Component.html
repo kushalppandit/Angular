@@ -1,0 +1,51 @@
+<div>
+
+   <div style="width:19%; float:left; background-color: blueviolet; margin-top:5%">
+     <!-- <div id="sidebar" class="sidebar" style=" width:150px" > -->
+        <ul style="list-style-type: none; padding-left: 20px; padding-top: 20px; padding-bottom: 20px; padding-right: 20px ">
+          
+          <li> <button class="button" style="width: 200px; height:50px " (click)="ClassBindingMultipleClass(2)">ClassBinding(MultipleClass)</button></li>
+          <li style="margin-top: 50px" > <button class="button" style="width: 200px; height:50px " (click)="StyleBindingMultipleStyle(4)">StyleBinding(MultipleStyle)</button></li>
+          <li style="margin-top: 50px" > <button class="button" style="width: 200px; height:50px " (click)="ClassBindingSingleClass(1)">ClassBinding(SingleClass)</button></li>
+          <li style="margin-top: 50px" > <button class="button" style="width: 200px; height:50px " (click)="StyleBindingSingleStyle(3)">StyleBinding(SingleStyle)</button></li>
+
+       </ul>
+     <!-- </div> -->
+ </div>
+
+<!-- <div style="float:right; margin-top:10%; margin-right:15%" [style.display]="hideSingleCSDiv ? 'none':'block'">
+  <h1><p  [class.NewClass]="ApplyClass" [style.background]="ChangeBack ? 'yellow' : 'none'" > Change the Single Style OR Single Class </p></h1>
+  <h1> {{Message}} </h1>
+</div>
+
+<div style="float:right; margin-top:10%; margin-right:15%" [style.display]="hideMultipleCSDiv ? 'none':'block'"> 
+    <h1><p  [ngClass]=" setClasses ? setClassesFunc() : Default" [ngStyle]="setStyles ? setStylesFunc() : Default"> Change the Multiple Style OR Multiple Class </p> </h1>
+    <h1> {{Message}} </h1>
+</div>
+
+
+</div> -->
+
+<!-- <div style="float:right; margin-top:15%; margin-right:25%">
+  <h1><p  [ngClass]=" setClasses ? setClassesFunc() : Default" [ngStyle]="setStyles ? setStylesFunc() : Default"  [class.NewClass]="ApplyClass" [style.background]="ChangeBack ? 'yellow' : 'none'" > Change the Single Style OR Single Class </p></h1>
+  <h1> {{Message}} </h1>
+</div> -->
+
+<div style="float:right; margin-top:5%; margin-right:15%" > 
+  <div style="border:3px solid red">
+  <h1><p  [ngClass]=" setClasses ? setClassesFunc() : Default" > Change the Multiple Class </p></h1>
+  <h2> {{Message1}} </h2>
+</div>
+<div style="margin-top:10px;border:3px solid blue" >
+  <h1><p   [ngStyle]=" setStyles ? setStylesFunc() : Default" > Change the Multiple Style </p></h1>
+  <h2> {{Message2}} </h2>
+</div>
+<div style="margin-top:10px; border:3px solid green">
+  <h1><p  [class.NewClass]="ApplyClass" > Change the Single Class </p></h1>
+  <h2> {{Message3}} </h2>
+</div>
+<div style="margin-top:10px; border:3px solid black" >
+  <h1><p  [style.background]="ChangeBack ? 'yellow' : 'none'" > Change the Single Style </p></h1>
+  <h2> {{Message4}} </h2>
+</div>
+</div>

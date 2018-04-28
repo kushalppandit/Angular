@@ -1,0 +1,11 @@
+<div style="margin-top:10%">
+    <button (click)="onclick()" > CLICK </button>
+</div>
+
+
+<div style="margin-top:10%;" [style.display]= "enableList ? 'block' : 'none' " >
+    <h2>Hello</h2>
+ <ul *NgFor="let x of stublist">
+     <li> {{x}} </li>
+ </ul>
+</div>

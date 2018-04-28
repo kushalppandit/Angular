@@ -1,0 +1,26 @@
+<div class="FormDiv" id="FormDiv" style="display:block; width:2000px">
+
+
+<div style="width:200px; float:left" >
+  <div id="sidebar" class="sidebar" style="background-color: blueviolet; width:150px" >
+    <ul style="list-style-type: none; padding-left: 20px; padding-top: 20px; padding-bottom: 20px; padding-right: 20px ">
+       <li  > <button class="button" style="width: 110px; height:50px " (click)="onFormSelctionButton(11)">TDF</button></li>
+       <li style="margin-top: 50px" > <button class="button" style="width: 110px; height:50px " (click)="onFormSelctionButton(12)">MDF</button></li>
+       <li style="margin-top: 50px" > <button class="button" style="width: 110px; height:50px " (click)="onFormSelctionButton(13)">MDF-MB_API</button></li>
+     </ul>
+  </div>
+</div>
+
+<div style="width:1800px; float:left; margin-top:200px">
+    <div [style.display]="hideText ? 'none':'block'" >
+      <h2 style="text-align: center">Please Select The Type OF Form</h2>
+    </div>
+
+    <div [style.display]="TDFormDiv ? 'none':'block'" style="margin: 0px auto;" ><TDForm>Loading.....</TDForm></div>
+    <div [style.display]="MDFormDiv ? 'none':'block'" style="margin: 0px auto;"><MDforms>Loading.....</MDforms></div>
+    <div [style.display]="MDBFormDiv ? 'none':'block'" style="margin: 0px auto;"><MDBForm>Loading.....</MDBForm></div>
+</div>
+    
+
+    
+</div>

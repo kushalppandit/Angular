@@ -1,0 +1,13 @@
+[
+            {"cid":1,"area":"Pune1"},
+            {"cid":1,"area":"Pune2"},
+            {"cid":1,"area":"Pune3"},
+
+            {"cid":2,"area":"Mumbai1"},
+            {"cid":2,"area":"Mumbai2"},
+            {"cid":2,"area":"Mumbai3"},
+
+            {"cid":3,"area":"Nashik1"},
+            {"cid":3,"area":"Nashik1"},
+            {"cid":3,"area":"Nashik1"}
+]

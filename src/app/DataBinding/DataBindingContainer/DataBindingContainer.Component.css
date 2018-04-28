@@ -1,0 +1,15 @@
+/*.sidebar {
+  width: 150px;
+  margin-left:0%;
+  background-color: blueviolet
+}
+.sidebar ul {
+ list-style-type: none; 
+ padding-left: 20px; 
+ padding-top: 20px; 
+ padding-bottom: 20px; 
+ padding-right: 20px
+}
+.sidebar button{
+   width: 110px;height:50px
+}*/
